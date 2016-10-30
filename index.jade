@@ -1,0 +1,71 @@
+//output: index.html
+
+link(rel="stylesheet" href="css/style.css")
+
+//navbar will come last
+
+//- .back
+
+.title Pricing
+
+.selectionContainer
+  .priceBox
+    .boxTitleA FROOD NOOPS
+    .priceTitle DISCOUNT
+    .discount#discountA 15%
+    .priceTitle UNIT PRICE
+    .unitPrice#unitC $0.42
+    .priceTitle TOTAL
+    .totalPrice#totalA $23.64
+  .priceBox
+    .boxTitleB PLUMBUS
+    .priceTitle DISCOUNT
+    .discount#discountB 15%
+    .priceTitle UNIT PRICE
+    .unitPrice#unitC $1.84
+    .priceTitle TOTAL
+    .totalPrice#totalB $23.87
+  .priceBox
+    .boxTitleC FLEEB
+    .priceTitle DISCOUNT
+    .discount#discountC 15%
+    .priceTitle UNIT PRICE
+    .unitPrice#unitC $3.79
+    .priceTitle TOTAL
+    .totalPrice#totalC $17.61
+
+.quantityContainer
+  
+  .rangeslider
+    .quantityTitle QUANTITY
+    <input class="rangeSliderRange" type="range" value="55" min="0" max="100" id='slider' oninput="outputUpdate(value)">
+    //- <output for="slider" id="quantity">50</output>
+    span.legendLeft 0
+    span.legendRight 100
+  
+  //- #sliderControl
+  //-   .sliderCenter
+  //-   #quantity 50
+  //- #barSelected
+  //- #bar
+  //- .legend
+    //- span.legendLeft 0
+    //- span.legendRight 100
+    
+.title Frequently asked questions
+
+.faqContainer
+  .leftFAQ
+    .question Can the Plumbus handle low temperatures?
+    .answer You should always keep your Plumbus at ideal temperature. Plumbus will sweat if too hot or cold.
+    .question Is this question useless?
+    .answer Yes, absolutely.
+  .rightFAQ
+    .question Hello how are you doing today?
+    .answer Hey I'm having a good day thank you for asking! What about you?
+    .question How's the weather in Arizona?
+    .answer I found 4 answers on the web for 'train station in South Africa'
+  
+
+script(src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous")
+script(src='js/index.js')

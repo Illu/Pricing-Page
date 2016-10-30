@@ -1,0 +1,227 @@
+// compileCompressed: ../css/style.css
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300')
+
+$textColor: rgb(145, 145, 197)
+$priceSize: 2.3em
+$containerWidth: 1000px
+
+*
+  margin: 0
+  padding: 0
+  border: 0
+
+body
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAABNJREFUGBljYBiawHhoOpsEVwMALqAANF3tk4IAAAAASUVORK5CYII=) repeat, linear-gradient(rgb(53, 53, 78), rgb(33, 33, 53))
+  font-family: 'Open Sans', sans-serif
+
+.back
+  height: 100%
+  width: 100%
+  position: absolute
+
+.title
+  text-align: center
+  margin: 80px 0px
+  color: $textColor
+  text-shadow: 0 0 7px rgb(37, 36, 59)
+  font-weight: normal
+  font-size: 2em
+
+.selectionContainer
+  max-width: $containerWidth
+  // background: blue
+  //above is for tests
+  margin: 0 auto
+  text-align: center
+
+.quantityContainer
+  max-width: $containerWidth
+  margin: 0 auto
+
+.quantityTitle
+  color: #fff
+  font-size: 1.5em
+  text-shadow: 0 0 7px rgb(37, 36, 59)
+  padding: 20px 0px 10px 0px
+
+// #sliderControl
+//   height: 20px
+//   width: 20px
+//   position: absolute
+//   left: 49.5%
+//   border-radius: 100%
+//   border: 1px solid rgba(150, 150, 150, 0.5)
+//   margin-top: 5px
+//   cursor: pointer
+//
+// .sliderCenter
+//   height: 10px
+//   width: 10px
+//   background: rgb(253, 140, 109)
+//   border-radius: 100%
+//   margin: 0 auto
+//   margin-top: 5px
+//
+// #barSelected
+//   max-width: $containerWidth/2
+//   width: 40%
+//   height: 3px
+//   background: -webkit-linear-gradient(left, rgb(253, 105, 167), rgb(253, 140, 109))
+//   display: inline-block
+//
+// #bar
+//   max-width: $containerWidth /2 - 5
+//   width: 40%
+//   height: 3px
+//   background: rgb(63, 63, 90)
+//   display: inline-block
+//
+
+
+.legend
+  color: $textColor
+  font-size: 1.5em
+  width: $containerWidth
+
+.legendLeft
+  color: $textColor
+  font-size: 1.5em
+
+.legendRight
+  color: $textColor
+  font-size: 1.5em
+  float: right
+
+.priceBox
+  width: 250px
+  height: 450px
+  background: linear-gradient(rgb(45, 44, 69), rgb(39, 40, 62))
+  display: inline-block
+  margin: 20px
+  border-radius: 8px
+  box-shadow: 0 0 20px rgb(33, 33, 53)
+  font-weight: bold
+  overflow: hidden
+
+.boxTitle
+  width: inherit
+  height: 80px
+  border-radius: 8px 8px 0 0
+  color: #fff
+  line-height: 80px
+
+.boxTitleA
+  @extend .boxTitle
+  background: -webkit-linear-gradient(left, rgb(128, 134, 223), rgb(72, 210, 215))
+  box-shadow: 0 0 15px rgb(99, 172, 218)
+
+.boxTitleB
+  @extend .boxTitle
+  background: -webkit-linear-gradient(left, rgb(253, 105, 167), rgb(253, 140, 109))
+  box-shadow: 0 0 15px rgb(254, 122, 135)
+
+.boxTitleC
+  @extend .boxTitle
+  background: -webkit-linear-gradient(left, rgb(95, 92, 217), rgb(203, 74, 253))
+  box-shadow: 0 0 15px rgb(147, 82, 234)
+
+.priceTitle
+  margin: 40px 0px 0px 0px
+  color: $textColor
+  font-size: .8em
+
+.discount
+  color: #fff
+  font-size: $priceSize
+
+.unitPrice
+  color: #fff
+  font-size: $priceSize
+
+.totalPrice
+  font-size: $priceSize
+
+#totalA
+  background: -webkit-linear-gradient(left, rgb(128, 134, 223), rgb(72, 210, 215))
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+#totalB
+  background: -webkit-linear-gradient(left, rgb(253, 105, 167), rgb(253, 140, 109))
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+#totalC
+  background: -webkit-linear-gradient(left, rgb(95, 92, 217), rgb(203, 74, 253))
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.faqContainer
+  text-align: center
+  max-width: $containerWidth
+  margin: 0px auto
+
+.leftFAQ
+  vertical-align: top
+  display: inline-block
+  width: 40%
+  margin: 0px 20px 0px 30px
+
+.rightFAQ
+  vertical-align: top
+  margin: 0px 20px 0px 20px
+  display: inline-block
+  width: 40%
+
+.question
+  color: #fff
+  text-shadow: 0 0 7px rgb(37, 36, 59)
+  text-align: left
+  margin-bottom: 20px
+
+.answer
+  text-align: left
+  text-shadow: 0 0 7px rgb(37, 36, 59)
+  color: $textColor
+  padding-left: 20px
+  border-left: 2px solid rgb(60, 60, 80)
+  margin-bottom: 40px
+
+
+
+//Slider stuff
+
+.rangeSlider
+  width: 80%
+  max-width: $containerWidth
+  margin: 0 auto
+
+.rangeSliderRange
+  width: 100%
+  -webkit-appearance: none
+  outline: none
+  height: 3px
+  background: -webkit-linear-gradient(left, rgb(253, 105, 167), rgb(253, 140, 109))
+
+//TODO: FIX IT
+input[type=range]::-ms-fill-lower
+  background: #fff
+
+input[type=range]::-webkit-slider-thumb
+  -webkit-appearance: none
+  appearance: none
+  width: 10px
+  height: 10px
+  background: rgb(253, 140, 109)
+  border-radius: 100%
+
+//TODO: FIX IT
+#quantity
+  width: 40px
+  position: absolute
+  color: #fff
+  font-size: $priceSize
+  transform: translate(-10px, 0)
+  text-align: center
+  margin-top: 10px
