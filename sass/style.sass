@@ -5,6 +5,7 @@
 $textColor: rgb(145, 145, 197)
 $priceSize: 2.3em
 $containerWidth: 1000px
+$navHeight: 50px
 
 *
   margin: 0
@@ -215,13 +216,43 @@ input[type=range]::-webkit-slider-thumb
   height: 10px
   background: rgb(253, 140, 109)
   border-radius: 100%
+  cursor: pointer
 
-//TODO: FIX IT
 #quantity
-  width: 40px
-  position: absolute
   color: #fff
   font-size: $priceSize
-  transform: translate(-10px, 0)
   text-align: center
-  margin-top: 10px
+  width: 100%
+  text-shadow: 0 0 7px rgb(37, 36, 59)
+
+//TODO: FIX IT (this is for when the label follows the slider's thumb)
+// #quantity
+//   width: 40px
+//   position: absolute
+//   color: #fff
+//   font-size: $priceSize
+//   transform: translate(-10px, 0)
+//   text-align: center
+//   margin-top: 10px
+
+
+
+
+//nav stuff
+
+.nav
+  background: rgb(62, 61, 92)
+  width: 100%
+  height: $navHeight
+  box-shadow: 0px 2px 6px rgb(48, 48, 72)
+
+.navTitle
+  color: $textColor
+  font-size: .8em
+  font-weight: bold
+  line-height: $navHeight
+  cursor: pointer
+  margin: 0px 20px
+
+.navRight
+  float: right

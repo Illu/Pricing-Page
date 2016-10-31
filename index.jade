@@ -2,10 +2,12 @@
 
 link(rel="stylesheet" href="css/style.css")
 
-//navbar will come last
-
-//- .back
-
+.nav
+  span.navTitle HOME
+  span.navTitle PRICING
+  span.navTitle SUPPORT
+  span.navTitle.navRight MY ACCOUNT
+  
 .title Pricing
 
 .selectionContainer
@@ -14,7 +16,7 @@ link(rel="stylesheet" href="css/style.css")
     .priceTitle DISCOUNT
     .discount#discountA 15%
     .priceTitle UNIT PRICE
-    .unitPrice#unitC $0.42
+    .unitPrice#unitA $0.42
     .priceTitle TOTAL
     .totalPrice#totalA $23.64
   .priceBox
@@ -22,7 +24,7 @@ link(rel="stylesheet" href="css/style.css")
     .priceTitle DISCOUNT
     .discount#discountB 15%
     .priceTitle UNIT PRICE
-    .unitPrice#unitC $1.84
+    .unitPrice#unitB $1.84
     .priceTitle TOTAL
     .totalPrice#totalB $23.87
   .priceBox
@@ -39,9 +41,9 @@ link(rel="stylesheet" href="css/style.css")
   .rangeslider
     .quantityTitle QUANTITY
     <input class="rangeSliderRange" type="range" value="55" min="0" max="100" id='slider' oninput="outputUpdate(value)">
-    //- <output for="slider" id="quantity">50</output>
     span.legendLeft 0
     span.legendRight 100
+    #quantity 55
   
   //- #sliderControl
   //-   .sliderCenter
