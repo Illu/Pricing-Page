@@ -31,8 +31,6 @@ body
 
 .selectionContainer
   max-width: $containerWidth
-  // background: blue
-  //above is for tests
   margin: 0 auto
   text-align: center
 
@@ -45,40 +43,6 @@ body
   font-size: 1.5em
   text-shadow: 0 0 7px rgb(37, 36, 59)
   padding: 20px 0px 10px 0px
-
-// #sliderControl
-//   height: 20px
-//   width: 20px
-//   position: absolute
-//   left: 49.5%
-//   border-radius: 100%
-//   border: 1px solid rgba(150, 150, 150, 0.5)
-//   margin-top: 5px
-//   cursor: pointer
-//
-// .sliderCenter
-//   height: 10px
-//   width: 10px
-//   background: rgb(253, 140, 109)
-//   border-radius: 100%
-//   margin: 0 auto
-//   margin-top: 5px
-//
-// #barSelected
-//   max-width: $containerWidth/2
-//   width: 40%
-//   height: 3px
-//   background: -webkit-linear-gradient(left, rgb(253, 105, 167), rgb(253, 140, 109))
-//   display: inline-block
-//
-// #bar
-//   max-width: $containerWidth /2 - 5
-//   width: 40%
-//   height: 3px
-//   background: rgb(63, 63, 90)
-//   display: inline-block
-//
-
 
 .legend
   color: $textColor
@@ -205,7 +169,6 @@ body
   height: 3px
   background: -webkit-linear-gradient(left, rgb(253, 105, 167), rgb(253, 140, 109))
 
-//TODO: FIX IT
 input[type=range]::-ms-fill-lower
   background: #fff
 
@@ -225,19 +188,6 @@ input[type=range]::-webkit-slider-thumb
   width: 100%
   text-shadow: 0 0 7px rgb(37, 36, 59)
 
-//TODO: FIX IT (this is for when the label follows the slider's thumb)
-// #quantity
-//   width: 40px
-//   position: absolute
-//   color: #fff
-//   font-size: $priceSize
-//   transform: translate(-10px, 0)
-//   text-align: center
-//   margin-top: 10px
-
-
-
-
 //nav stuff
 
 .nav
@@ -245,6 +195,7 @@ input[type=range]::-webkit-slider-thumb
   width: 100%
   height: $navHeight
   box-shadow: 0px 2px 6px rgb(48, 48, 72)
+  list-style: none
 
 .navTitle
   color: $textColor
@@ -253,6 +204,7 @@ input[type=range]::-webkit-slider-thumb
   line-height: $navHeight
   cursor: pointer
   margin: 0px 20px
+  display: inline-block
 
 .navRight
   float: right
