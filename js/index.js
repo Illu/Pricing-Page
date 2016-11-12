@@ -18,3 +18,16 @@ function outputUpdate(quantity){
     $('#total' + units[i]).html('$' + total);
   }
 }
+
+$(document).ready(function(){
+  var mobileMenuDisplay = true;
+  var displayValue = 'none';
+  $('#ham').on('click', function(e){
+    mobileMenuDisplay = !mobileMenuDisplay;
+    if (mobileMenuDisplay)
+      displayValue = 'none';
+    else
+      displayValue = 'block';
+    $('.navTitle').css('display', displayValue);
+  });
+});
