@@ -206,9 +206,19 @@ input[type=range]::-webkit-slider-thumb
   cursor: pointer
   margin: 0px 20px
   display: inline-block
+  transition-duration: .3s
+
+.navTitle:hover
+  background: rgb(165, 165, 217)
+  color: white
 
 .navRight
   float: right
+
+.menuToggle
+  color: yellow !important
+  padding: 8px
+  cursor: pointer
 
 #ham
 	opacity: 0
@@ -221,6 +231,7 @@ input[type=range]::-webkit-slider-thumb
     text-align: center
     background: $navColor
     z-index: 2
+    display: none
 
   .navRight
     float: none
@@ -232,3 +243,10 @@ input[type=range]::-webkit-slider-thumb
     // height: 50px
     // text-align: right
     // background: yellow
+
+@media screen and (min-width: 601px)
+  .navTitle
+    display: inline-block
+
+  .navTitle:hover
+    background: $navColor

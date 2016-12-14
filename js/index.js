@@ -24,10 +24,14 @@ $(document).ready(function(){
   var displayValue = 'none';
   $('#ham').on('click', function(e){
     mobileMenuDisplay = !mobileMenuDisplay;
-    if (mobileMenuDisplay)
+    if (mobileMenuDisplay){
       displayValue = 'none';
-    else
+      $('.title').css('margin-top', '80px');
+    }
+    else{
       displayValue = 'block';
+      $('.title').css('margin-top', '300px');
+    }
     $('.navTitle').css('display', displayValue);
   });
 });
