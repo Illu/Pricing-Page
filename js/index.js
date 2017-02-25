@@ -18,20 +18,3 @@ function outputUpdate(quantity){
     $('#total' + units[i]).html('$' + total);
   }
 }
-
-$(document).ready(function(){
-  var mobileMenuDisplay = true;
-  var displayValue = 'none';
-  $('#ham').on('click', function(e){
-    mobileMenuDisplay = !mobileMenuDisplay;
-    if (mobileMenuDisplay){
-      displayValue = 'none';
-      $('.title').css('margin-top', '80px');
-    }
-    else{
-      displayValue = 'block';
-      $('.title').css('margin-top', '300px');
-    }
-    $('.navTitle').css('display', displayValue);
-  });
-});
