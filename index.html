@@ -1,64 +1,70 @@
 
-<link rel="stylesheet" href="css/style.css"/>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
-<input type="checkbox" id="menuToggler" class="input-toggler"/>
-<label for="menuToggler" class="menu-toggler"><span class="menu-toggler__line"></span><span class="menu-toggler__line"></span><span class="menu-toggler__line"></span></label>
-<ul class="nav">
-  <li class="navTitle">HOME</li>
-  <li class="navTitle">PRICING</li>
-  <li class="navTitle">SUPPORT</li>
-  <li class="navTitle navRight">MY ACCOUNT</li>
-</ul>
-<div class="title">Pricing</div>
-<div class="selectionContainer">
-  <div class="priceBox">
-    <div class="boxTitleA">FROOD NOOPS</div>
-    <div class="priceTitle">DISCOUNT</div>
-    <div id="discountA" class="discount">15%</div>
-    <div class="priceTitle">UNIT PRICE</div>
-    <div id="unitA" class="unitPrice">$0.42</div>
-    <div class="priceTitle">TOTAL</div>
-    <div id="totalA" class="totalPrice">$23.64</div>
+<head>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+  <title>Pricing page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <input type="checkbox" id="menuToggler" class="input-toggler"/>
+  <label for="menuToggler" class="menu-toggler"><span class="menu-toggler__line"></span><span class="menu-toggler__line"></span><span class="menu-toggler__line"></span></label>
+  <ul class="nav">
+    <li class="navTitle">HOME</li>
+    <li class="navTitle">PRICING</li>
+    <li class="navTitle">SUPPORT</li>
+    <li class="navTitle navRight">MY ACCOUNT</li>
+  </ul>
+  <div class="title">Pricing</div>
+  <div class="selectionContainer">
+    <div class="priceBox">
+      <div class="boxTitleA">FROOD NOOPS</div>
+      <div class="priceTitle">DISCOUNT</div>
+      <div id="discountA" class="discount">15%</div>
+      <div class="priceTitle">UNIT PRICE</div>
+      <div id="unitA" class="unitPrice">$0.42</div>
+      <div class="priceTitle">TOTAL</div>
+      <div id="totalA" class="totalPrice">$23.64</div>
+    </div>
+    <div class="priceBox">
+      <div class="boxTitleB">PLUMBUS</div>
+      <div class="priceTitle">DISCOUNT</div>
+      <div id="discountB" class="discount">15%</div>
+      <div class="priceTitle">UNIT PRICE</div>
+      <div id="unitB" class="unitPrice">$1.84</div>
+      <div class="priceTitle">TOTAL</div>
+      <div id="totalB" class="totalPrice">$23.87</div>
+    </div>
+    <div class="priceBox">
+      <div class="boxTitleC">FLEEB</div>
+      <div class="priceTitle">DISCOUNT</div>
+      <div id="discountC" class="discount">15%</div>
+      <div class="priceTitle">UNIT PRICE</div>
+      <div id="unitC" class="unitPrice">$3.79</div>
+      <div class="priceTitle">TOTAL</div>
+      <div id="totalC" class="totalPrice">$17.61</div>
+    </div>
   </div>
-  <div class="priceBox">
-    <div class="boxTitleB">PLUMBUS</div>
-    <div class="priceTitle">DISCOUNT</div>
-    <div id="discountB" class="discount">15%</div>
-    <div class="priceTitle">UNIT PRICE</div>
-    <div id="unitB" class="unitPrice">$1.84</div>
-    <div class="priceTitle">TOTAL</div>
-    <div id="totalB" class="totalPrice">$23.87</div>
+  <div class="quantityContainer">
+    <div class="rangeslider">
+      <div class="quantityTitle">QUANTITY</div><input class="rangeSliderRange" type="range" value="55" min="0" max="100" id='slider' oninput="outputUpdate(value)"><span class="legendLeft">0</span><span class="legendRight">100</span>
+      <div id="quantity">55</div>
+    </div>
   </div>
-  <div class="priceBox">
-    <div class="boxTitleC">FLEEB</div>
-    <div class="priceTitle">DISCOUNT</div>
-    <div id="discountC" class="discount">15%</div>
-    <div class="priceTitle">UNIT PRICE</div>
-    <div id="unitC" class="unitPrice">$3.79</div>
-    <div class="priceTitle">TOTAL</div>
-    <div id="totalC" class="totalPrice">$17.61</div>
+  <div class="title">Frequently asked questions</div>
+  <div class="faqContainer">
+    <div class="leftFAQ">
+      <div class="question">Can the Plumbus handle low temperatures?</div>
+      <div class="answer">You should always keep your Plumbus at ideal temperature. Plumbus will sweat if too hot or cold.</div>
+      <div class="question">Is this question useless?</div>
+      <div class="answer">Yes, absolutely.</div>
+    </div>
+    <div class="rightFAQ">
+      <div class="question">Hello how are you doing today?</div>
+      <div class="answer">Hey I'm having a good day thank you for asking! What about you?</div>
+      <div class="question">How's the weather in Arizona?</div>
+      <div class="answer">I found 4 answers on the web for 'train station in South Africa'</div>
+    </div>
   </div>
-</div>
-<div class="quantityContainer">
-  <div class="rangeslider">
-    <div class="quantityTitle">QUANTITY</div><input class="rangeSliderRange" type="range" value="55" min="0" max="100" id='slider' oninput="outputUpdate(value)"><span class="legendLeft">0</span><span class="legendRight">100</span>
-    <div id="quantity">55</div>
-  </div>
-</div>
-<div class="title">Frequently asked questions</div>
-<div class="faqContainer">
-  <div class="leftFAQ">
-    <div class="question">Can the Plumbus handle low temperatures?</div>
-    <div class="answer">You should always keep your Plumbus at ideal temperature. Plumbus will sweat if too hot or cold.</div>
-    <div class="question">Is this question useless?</div>
-    <div class="answer">Yes, absolutely.</div>
-  </div>
-  <div class="rightFAQ">
-    <div class="question">Hello how are you doing today?</div>
-    <div class="answer">Hey I'm having a good day thank you for asking! What about you?</div>
-    <div class="question">How's the weather in Arizona?</div>
-    <div class="answer">I found 4 answers on the web for 'train station in South Africa'</div>
-  </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
