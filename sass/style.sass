@@ -9,15 +9,16 @@ $navHeight: 50px
 $navColor: rgb(62, 61, 92)
 
 *
-  margin: 0
-  padding: 0
-  border: 0
+  margin: 0px
+  padding: 0px
+  border: none
 
 body
+  width: 100%
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAABNJREFUGBljYBiawHhoOpsEVwMALqAANF3tk4IAAAAASUVORK5CYII=) repeat, linear-gradient(rgb(53, 53, 78), rgb(33, 33, 53))
   font-family: 'Open Sans', sans-serif
-  margin: 0
-  padding: 0
+  margin: 0px
+  padding: 0px
 
 .back
   height: 100%
@@ -133,14 +134,14 @@ body
 .leftFAQ
   vertical-align: top
   display: inline-block
-  width: 40%
+  max-width: 40%
   margin: 0px 20px 0px 30px
 
 .rightFAQ
   vertical-align: top
   margin: 0px 20px 0px 20px
   display: inline-block
-  width: 40%
+  max-width: 40%
 
 .question
   color: #fff
@@ -289,6 +290,15 @@ input[type=range]::-webkit-slider-thumb
   .input-toggler:checked ~ .nav
     transform: translateX(0)
     background-position: 0 0
+
+  .faqContainer
+    max-width: 600px
+
+  .rightFAQ
+    max-width: 90%
+
+  .leftFAQ
+    max-width: 90%
 
 @media screen and (min-width: 601px)
   .navTitle
